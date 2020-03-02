@@ -1,0 +1,5 @@
+resources:
+- operator.yaml
+- minioinstance.yaml
+
+namespace: kubeflow

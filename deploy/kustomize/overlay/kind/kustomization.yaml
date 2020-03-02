@@ -1,0 +1,16 @@
+bases:
+# core resources
+- ../../base/namespace
+- ../../base/ingress
+- ../../base/distributed-tf
+- ../../base/distributed-pytorch
+# dependencies
+#- github.com/lyft/flyte/kustomize/dependencies/contour_ingress_controller
+
+# core
+#- ../../base/notebook-controller
+
+# dependencies
+#- ../../dependencies/heptio-contour
+#- ../../dependencies/http-proxy-contour
+- ../../dependencies/minio

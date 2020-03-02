@@ -1,0 +1,4 @@
+commonLabels:
+  app: ingress
+resources:
+- ingress.yaml

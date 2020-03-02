@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: kubeflow-ingress
+  namespace: kubeflow
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /minio
+        backend:
+          serviceName: http-minio
+          servicePort: 9000
