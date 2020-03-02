@@ -1,6 +1,6 @@
 # kf-dev
 
-Kubeflow-development for Kubeflow on a dev machine.
+Kubeflow on a developer machine.
 
 ## Installation
 
