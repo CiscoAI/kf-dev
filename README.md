@@ -5,19 +5,16 @@ Kubeflow-development for Kubeflow on a dev machine.
 ## Installation
 
 ```bash
-git clone https://github.com/CiscoAI/kf-dev
-cd kf-dev
+wget -O kind-config.yaml https://raw.githubusercontent.com/CiscoAI/kf-dev/master/kind/kind-config.yaml
 kind create cluster \
     --name kf-k8s \
-    --config kind/kind-config.yaml
-kustomize build deploy/kustomize/overlay/kind | kubectl apply -f -
-kustomize build deploy/kustomize/overlay/user/notebook | kubectl apply -f -
+    --config kind-config.yaml
+kustomize build github.com/CiscoAI/kf-dev/deploy/kustomize/overlay/kind | kubectl apply -f -
 ```
 
 ## Usage
 
-// TBD
-Go to [localhost:80](http://localhost:80) on your web browser.
+TODO(swiftdiaries)
 
 ## Kubeflow components
 
